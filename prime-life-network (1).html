@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prime Life Network – Earn commission near Ikeja</title>
+<meta name="description" content="Join Prime Life Transform as a Booking Partner or Associate near Ikeja. Commission-based opportunity. Reserve a seat at our Monday Open House.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--navy:#0b1f4d;--gold:#c8962e;--gold-d:#8a6414;--yellow:#f7c948;--bg:#fff;--soft:#f6f8fc;--line:#e1e6f0;--mut:#4a5a7d}
+*,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:12px}
+body{margin:0;background:var(--bg);color:var(--navy);font:16px/1.55 'Plus Jakarta Sans',system-ui,sans-serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.w{max-width:960px;margin:0 auto;padding:0 18px}h1,h2,h3{line-height:1.15;margin:0}a{color:var(--navy)}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;max-width:960px;margin:0 auto}
+.logo{font-weight:800;font-size:18px}.logo b{color:var(--gold)}
+.btn{display:inline-block;background:var(--navy);color:#fff;border:2px solid var(--navy);border-radius:12px;padding:12px 20px;font:700 16px inherit;font-family:inherit;text-decoration:none;cursor:pointer;min-height:48px}
+.btn.o{background:#fff;color:var(--navy)}.btn.g{background:var(--yellow);border-color:var(--yellow);color:var(--navy)}.btn.sm{min-height:40px;padding:8px 16px;font-size:15px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{padding:30px 0 36px;border-bottom:4px solid var(--yellow)}.hero h1{font-size:clamp(30px,7vw,50px);font-weight:800;letter-spacing:-.02em;max-width:14em}
+.hero p{color:var(--mut);font-size:18px;max-width:34em;margin:14px 0 22px}.pill{display:inline-block;font-size:13px;font-weight:800;background:var(--yellow);border-radius:99px;padding:4px 12px;margin-bottom:14px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.oh{margin-top:24px;border:2px solid var(--gold);border-radius:16px;padding:14px 18px;background:#fffdf5;max-width:560px}.oh small{display:block;color:var(--gold-d);font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:12px}.oh strong{font-size:20px}
+.sec{padding:38px 0}.alt{background:var(--soft)}.sec h2{font-size:27px;margin-bottom:6px}.sec h2:after{content:"";display:block;width:44px;height:4px;background:var(--gold);border-radius:3px;margin:8px 0 16px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{border:1.5px solid var(--line);border-radius:18px;padding:20px;background:#fff}.card h3{font-size:20px;margin-bottom:4px}.big{font-size:36px;font-weight:800;color:var(--gold)}.card ul{padding-left:18px;margin:10px 0 0;color:var(--mut)}
+.step b{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--yellow);color:var(--navy);margin-bottom:8px}.step p{margin:4px 0 0;color:var(--mut)}
+.note{background:#fffdf5;border-left:6px solid var(--yellow);border-radius:12px;padding:16px 18px}
+form,.box{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:20px;max-width:560px}
+label{display:block;font-weight:600;font-size:14px;margin-bottom:4px}.f{margin-bottom:14px}
+input,select{font:inherit;color:var(--navy);background:#fff;border:1.5px solid #b9c3d9;border-radius:10px;padding:11px 12px;min-height:48px;width:100%}
+.err{color:#b91c1c;font-size:14px;margin:0 0 10px}.ok{border-color:var(--gold);background:#fffdf5}
+details{border:1.5px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:10px;background:#fff}summary{font-weight:700;cursor:pointer}details p{margin:8px 0 0;color:var(--mut)}
+footer{background:var(--navy);color:#dfe6f7;padding:24px 0;font-size:14px}footer a{color:var(--yellow)}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><div class="logo">Prime Life <b>Network</b></div><a class="btn sm" href="#reserve">Reserve a seat</a></header>
+<main>
+<section class="hero"><div class="w"><span class="pill">Ikeja and nearby areas</span>
+<h1>Earn commission by connecting families to a cooking demonstration.</h1>
+<p>Prime Life Transform is looking for Booking Partners and Associates close to Ikeja, so getting to work costs you little. This is a commission opportunity, not a salary job.</p>
+<div class="btns"><a class="btn" href="#reserve">Reserve my seat</a><a class="btn o" href="#roles">See the roles</a></div>
+<div class="oh"><small>Next Open House</small><strong id="ohDate"></strong><div id="ohInfo" style="color:var(--mut)"></div><div id="ohMap"></div></div></div></section>
+
+<section class="sec" id="about" hidden><div class="w"><h2>About us</h2><p id="aboutT"></p><div class="g2"><div class="card" id="vis" hidden><h3>Our vision</h3><p id="visT"></p></div><div class="card" id="mis" hidden><h3>Our mission</h3><p id="misT"></p></div></div></div></section>
+
+<section class="sec alt" id="roles"><div class="w"><h2>Choose how you want to work</h2><div class="g2">
+<div class="card"><h3>Booking Partner</h3><p style="color:var(--mut);margin:0">For people who already have a job.</p><div class="big">5%</div><div style="color:var(--mut)">commission on each client purchase</div>
+<ul><li>Share contacts of qualified prospects interested in a cooking demonstration</li><li>No training schedule to follow</li></ul></div>
+<div class="card"><h3>Associate</h3><p style="color:var(--mut);margin:0">For people ready to train and grow.</p><div class="big">10%</div><div style="color:var(--mut)">commission on sales, plus a $50 reward</div>
+<ul><li>Go through Prime Life Transform training</li><li>Provide prospects for demonstrations</li><li>$50 reward once 6 qualified families are shown the presentation within 15 days</li></ul></div></div></div></section>
+
+<section class="sec"><div class="w"><h2>How it works</h2><div class="g3">
+<div class="step"><b>1</b><h3>Reserve a seat</h3><p>Pick the Monday you can come. It takes one minute.</p></div>
+<div class="step"><b>2</b><h3>Come to our Open House</h3><p>Visit the office to learn the details of the role you picked and have your questions answered.</p></div>
+<div class="step"><b>3</b><h3>Bring prospects</h3><p>You share contacts of interested people. We present the demonstration to them.</p></div></div></div></section>
+
+<section class="sec alt"><div class="w"><h2>Please read before you join</h2><div class="note"><p style="margin:0 0 8px"><strong>This is not a salary job.</strong> You are paid commission on sales and, for Associates, the $50 reward after 6 qualified families are shown the presentation within 15 days.</p>
+<p style="margin:0">Your earnings depend on real sales, so we cannot promise an amount.</p></div></div></section>
+
+<section class="sec alt" id="find"><div class="w"><h2>Find us</h2>
+<p style="margin-top:0"><strong>Prime Life Transform office</strong><br><span id="addr"></span><br>Open House: every Monday, 10:00 AM</p>
+<div class="btns"><a class="btn" id="mapLink" target="_blank" rel="noopener">Open in Google Maps</a></div></div></section>
+
+<section class="sec" id="reserve"><div class="w"><h2>Reserve your seat</h2>
+<form id="f" novalidate>
+<div class="f"><label for="d">Which Monday?</label><select id="d"></select></div>
+<div class="f"><label for="n">Full name</label><input id="n" autocomplete="name"></div>
+<div class="f"><label for="p">Phone number (WhatsApp)</label><input id="p" type="tel" autocomplete="tel" placeholder="e.g. 0803 000 0000"></div>
+<div class="f"><label for="a">Where do you live?</label><input id="a" placeholder="e.g. Ikeja, Maryland, Ojodu"></div>
+<div class="f"><label for="r">I am interested as</label><select id="r"><option value="">Choose…</option><option>Booking Partner</option><option>Associate</option><option>Not sure yet</option></select></div>
+<div class="f"><label for="j">Do you currently have a job?</label><select id="j"><option value="">Choose…</option><option>Yes</option><option>No</option></select></div>
+<p class="err" id="e" role="alert"></p><button class="btn" id="go" type="submit">Reserve my seat</button>
+<p style="color:var(--mut);font-size:13px;margin:12px 0 0">We save your name, number and answers so we can confirm your seat and remind you before the Open House.</p></form>
+<div id="done" class="box ok" hidden role="status"></div></div></section>
+
+<section class="sec alt"><div class="w"><h2>Already with us? Get your invite link</h2><p style="color:var(--mut);margin-top:0">Share your personal link. People who reserve through it are counted under your name.</p>
+<div class="box"><div class="f"><label for="in">Your first name</label><input id="in" placeholder="e.g. Chioma"></div><p class="err" id="ie" role="alert"></p>
+<div class="btns"><button class="btn" id="mk" type="button">Create my link</button></div>
+<div id="lk" hidden style="margin-top:14px"><input id="lu" readonly aria-label="Your invite link"><div class="btns" style="margin-top:10px"><button class="btn o sm" id="cp" type="button">Copy link</button><a class="btn g sm" id="sh" target="_blank" rel="noopener">Share on WhatsApp</a></div></div></div></div></section>
+
+<section class="sec"><div class="w"><h2>Common questions</h2>
+<details><summary>Is this a salary job?</summary><p>No. It is commission-based. Booking Partners earn 5% and Associates earn 10% on sales, and Associates can also earn the $50 reward described above.</p></details>
+<details><summary>Who can join?</summary><p>Booking Partners are people who already have a job. Associates are people willing to go through training. Both should live in or near Ikeja.</p></details>
+<details><summary>When is the Open House?</summary><p>Every Monday at 10:00 AM at our office: 11 Bayode Oluwole Street, off Balogun, Ikeja. Pick the date in the form above.</p></details>
+<details><summary>What happens at the Open House?</summary><p>You learn the details of the role you picked, including how qualified families are counted, and you can ask questions.</p></details></div></section>
+</main>
+<footer><div class="w">© Prime Life Transform · Ikeja, Lagos · Questions? <a href="https://wa.me/2348103806868">Chat on WhatsApp</a></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script>
+/* ===== EDIT HERE ===== */
+const OPEN={time:'10:00 AM',address:'11 Bayode Oluwole Street, off Balogun, Ikeja, Lagos'};
+const ABOUT={about:'PL TRANSFORM is a people-development and entrepreneurial organisation committed to helping individuals grow through training, mentorship, teamwork, and business opportunities connected with Saladmaster.',vision:'To raise and transform independent leaders through our success programs, and create an atmosphere that stimulates the champion in you to rise.',mission:'To bring health through food to Nigerian families.'};
+const MAP='https://maps.app.goo.gl/aa2gQENwDvzfdKJi7'; // exact office location on Google Maps
+const WA='2348103806868';
+const SB={url:'https://lhklnflmwjcshymdsdxk.supabase.co',key:'sb_publishable_6zYj5q6eYPXM8ReI4DPpYQ_zXxOk9NF'};
+/* ===================== */
+document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.closest('a[href^="#"]');if(!a)return;const t=document.getElementById(a.getAttribute('href').slice(1));if(t){ev.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}});
+const $=id=>document.getElementById(id);let sb=null;try{sb=window.supabase.createClient(SB.url,SB.key)}catch(x){}
+const q=new URLSearchParams(location.search),rawRef=(q.get('ref')||'').toLowerCase(),ref=/^[a-z0-9_-]{2,30}$/.test(rawRef)?rawRef:null;
+const t0=new Date(new Date().toLocaleString('en-US',{timeZone:'Africa/Lagos'}));t0.setHours(0,0,0,0);
+const first=new Date(t0);first.setDate(t0.getDate()+(8-(t0.getDay()||7))%7);
+const mons=[first,new Date(first.getTime()+7*864e5)].map(d=>{const x=new Date(d.getFullYear(),d.getMonth(),d.getDate()+(d.getHours()>12?1:0));return x});
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const lab=d=>d.toLocaleDateString('en-NG',{weekday:'long',day:'numeric',month:'long'});
+$('ohDate').textContent=lab(mons[0]);
+$('ohInfo').textContent=(OPEN.time?OPEN.time+(OPEN.address?' · '+OPEN.address:''):OPEN.address)||'Time and venue are confirmed on WhatsApp after you reserve.';
+const mapUrl=MAP;
+$('addr').textContent=OPEN.address;$('mapLink').href=mapUrl;
+if(mapUrl)$('ohMap').innerHTML='<a class="btn sm o" style="margin-top:10px" target="_blank" rel="noopener" href="'+mapUrl+'">Get directions</a>';
+mons.forEach(d=>{const o=document.createElement('option');o.value=iso(d);o.textContent=lab(d);$('d').appendChild(o)});
+if(ABOUT.about||ABOUT.vision||ABOUT.mission){$('about').hidden=false;$('aboutT').textContent=ABOUT.about;if(!ABOUT.about)$('aboutT').remove();
+if(ABOUT.vision){$('vis').hidden=false;$('visT').textContent=ABOUT.vision}if(ABOUT.mission){$('mis').hidden=false;$('misT').textContent=ABOUT.mission}}
+$('f').addEventListener('submit',async ev=>{ev.preventDefault();const g=i=>$(i).value.trim(),e=$('e');
+if(g('n').length<2)return e.textContent='Please enter your full name.';
+if(!/^\+?[0-9 ()-]{7,20}$/.test(g('p')))return e.textContent='Please enter a valid phone number.';
+if(g('a').length<2)return e.textContent='Please tell us where you live.';
+if(!g('r')||!g('j'))return e.textContent='Please answer all questions.';
+e.textContent='';$('go').disabled=true;$('go').textContent='Reserving…';
+const row={session_date:g('d'),full_name:g('n'),phone:g('p'),area:g('a'),role_interest:g('r'),employed:g('j')==='Yes',ref:ref};
+let err=null;try{err=(await sb.from('reservations').insert(row)).error}catch(x){err={message:String(x)}}
+$('go').disabled=false;$('go').textContent='Reserve my seat';
+const fallback='https://wa.me/'+WA+'?text='+encodeURIComponent('Hello Prime Life Transform, I want to reserve a seat for '+lab(new Date(row.session_date+'T12:00:00'))+'.\nName: '+row.full_name+'\nPhone: '+row.phone+'\nArea: '+row.area+'\nInterested as: '+row.role_interest);
+if(err){if(err.code==='23505')return e.textContent='This number already has a seat for that Monday. See you there!';
+e.innerHTML='We could not save your reservation. <a href="'+fallback+'" target="_blank" rel="noopener">Message us on WhatsApp</a> instead.';return}
+const d=$('done');d.hidden=false;$('f').hidden=true;
+const when=lab(new Date(row.session_date+'T12:00:00'));
+d.innerHTML='<h3>Your seat is reserved</h3><p>Monday Open House: <strong></strong>.'+(OPEN.time?' Time: '+OPEN.time.replace(/[<>&]/g,'')+'.':'')+' We will remind you on WhatsApp before the day.</p><div class="btns"><a class="btn sm" target="_blank" rel="noopener">Confirm on WhatsApp</a>'+(mapUrl?'<a class="btn o sm" target="_blank" rel="noopener" href="'+mapUrl+'">Get directions</a>':'')+'</div>';
+d.querySelector('strong').textContent=when;d.querySelector('a').href=fallback;d.scrollIntoView({behavior:'smooth',block:'center'})});
+$('mk').addEventListener('click',()=>{const s=$('in').value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,30);
+if(s.length<2)return $('ie').textContent='Enter your first name (at least 2 letters or numbers).';$('ie').textContent='';
+const u=location.href.split('?')[0].split('#')[0]+'?ref='+s;$('lu').value=u;$('lk').hidden=false;
+$('sh').href='https://wa.me/?text='+encodeURIComponent('Join us at the Prime Life Transform Open House near Ikeja. Reserve your seat here: '+u)});
+$('cp').addEventListener('click',()=>{const i=$('lu');i.select();(navigator.clipboard?navigator.clipboard.writeText(i.value):Promise.reject()).catch(()=>document.execCommand('copy')).finally(()=>{$('cp').textContent='Copied'})});
+</script></body></html>
